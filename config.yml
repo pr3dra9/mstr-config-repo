@@ -1,0 +1,12 @@
+## YAML Template.
+---
+server:port: 8888
+spring:
+  cloud.bus.id: config
+
+---
+spring:
+  config:
+    activate.on-profile: docker
+    
+server.port: 8080
